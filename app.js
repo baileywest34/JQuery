@@ -21,8 +21,11 @@ var allSections;
 allSections = $('section').css({'background-color':'black', 'color': 'azure'});
 
 //reacting to dom 
-$('.event').on('click', function() {
+$('.hide').on('click', function() {
   $('.section4').hide();
+});
+$('.show').on('click', function() {
+  $('.section4').show();
 });
 
 //append/prepend
