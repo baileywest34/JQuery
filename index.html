@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="$plugin/jquery.calculator.package-2.0.1/jquery.calculator.css">
+    <script type="text/javascript" src="$plugin/jquery.calculator.package-2.0.1/jquery.plugin.js"></script>
+    <script type="text/javascript" src="$plugin/jquery.calculator.package-2.0.1/jquery.calculator.js"></script>
+    <script>
+
+
+
+    </script>
+    <title>JQuery</title>
+</head>
+
+<body>
+    <header>
+        <h1>JQuery ($)</h1>
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Explain the utility of the jQuery object (“$”)</h2>
+            <ul>
+                <li>$ is a pointer or variable that points to the JQuery function.</li>
+                <li>array like object.</li>
+                <li>$ = JQuery(function)</li>
+                <li>$(string)</li>
+                <li>$(function)</li>
+                <li>$(DOM element)</li>
+            </ul>
+        </section>
+        <div><input type="button" value="click me"></div>
+        <section class="section2">
+
+            <h2>Selection of DOM elements (CSS, ID, Name, etc)</h2>
+            <ul class="section2-list">
+                <li>$('tags')</li>
+                <li>$('.class')</li>
+                <li id="id-selector">$('#id')</li>
+                <li>$('selector').css('key', 'value')</li>
+            </ul>
+        </section>
+
+        <section class="section3">
+            <h2>Work with collections of elements</h2>
+            <ul>
+                <li>$('.div1, .div2, .div3')</li>
+                <li>$('.class').parent()</li>
+                <li>.child()</li>
+            </ul>
+        </section>
+        <div><input type="button" value="click-me" class="event"></div>
+        <section class="section4">
+            <h2>Listening for and reacting to events on DOM elements</h2>
+            <ul>
+                <li>$('#my-input').on('keypress', function() {});</li>
+            </ul>
+        </section>
+
+        <section class="section5">
+            <h2>Creating/appending/prepending DOM elements</h2>
+            <ul>
+                <li id="append">.append('<element>');</li>
+                <li id="prepend">.prepend('<element>');</li>
+                <input type="button" value="add after" id="append-to">
+                <ul id="grocery-list">
+
+                    <li>apples</li>
+
+                </ul>
+                <input type="button" value="add before" id="prepend-to">
+            </ul>
+        </section>
+
+        <section class="section6">
+            <h2>Modifying existing DOM elements (attributes, content)</h2>
+            <div><input type="button" value="click me" class="btn-attr"><br>
+                <button id="btn-text">Set Text</button>
+            </div>
+            <ul>
+                <li class="attrText">variable.attr('attribute-name', 'value')</li>
+            </ul>
+            <img class="cool-pic" src="pictures/cool-pic.jpg" width="100px" height="70px">
+        </section>
+        <div><button id="remove">Click me!</button></div>
+        <section class="section7">
+            <h2>Removing DOM elements</h2>
+            <ul>
+                <li>.remove()</li>
+            </ul>
+        </section>
+        <div id="animate" style="background:#98bf21;height:100px;width:100px;position:absolute;margin-left: 300px;">
+        </div>
+        <br>
+        <section class="section8">
+
+            <button id="btn-animate">Start Animation</button>
+            <h2>Perform basic animations</h2>
+            <ul>
+                <li>$(selector).animate({params},speed,callback);</li>
+            </ul>
+
+        </section>
+
+        <section class="section9">
+            <h2>Integrate 3rd party plugins to get functionality without having to create it</h2>
+            <ul>
+                <li>calculator plugin.</li>
+                <input type="text" id="imageCalc">
+            </ul>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
